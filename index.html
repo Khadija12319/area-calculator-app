@@ -16,7 +16,7 @@
             <!--shape card container-->
             <div class="flex-1 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6">
                     <!--Triangle-->
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div class="card w-96 bg-base-100 shadow-xl forBG" id="card1">
                         <figure class="px-10 pt-10">
                           <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -37,7 +37,7 @@
                       </div>
     
                       <!--Rectangle-->
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div class="card w-96 bg-base-100 shadow-xl" id="card2">
                         <figure class="px-10 pt-10">
                           <img src="images/rectangle.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -58,7 +58,7 @@
                       </div>
     
                       <!--Parallelogram-->
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div class="card w-96 bg-base-100 shadow-xl" id="card3">
                         <figure class="px-10 pt-10">
                           <img src="images/parallelogram.png" alt="" class="rounded-xl w-full h-auto" />
                         </figure>
@@ -79,7 +79,7 @@
                       </div>
     
                       <!--Rhombus-->
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div class="card w-96 bg-base-100 shadow-xl" id="card4">
                         <figure class="px-10 pt-10">
                           <img src="images/rhombus.png" alt="" class="rounded-xl" />
                         </figure>
@@ -100,7 +100,7 @@
                       </div>
     
                       <!--Pentagon-->
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div class="card w-96 bg-base-100 shadow-xl" id="card5">
                         <figure class="px-10 pt-10">
                           <img src="images/pentagon.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -121,7 +121,7 @@
                       </div>
     
                       <!--Ellipse-->
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div class="card w-96 bg-base-100 shadow-xl" id="card6">
                         <figure class="px-10 pt-10">
                           <img src="images/ellipse.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -148,6 +148,48 @@
             </div>
         </div>
     </main>
+    <script>
+        //mouseover
+        document.getElementById("card1").addEventListener("mouseover", function() {
+        document.getElementById("card1").style.backgroundColor = "grey";
+        });
+        document.getElementById("card2").addEventListener("mouseover", function() {
+        document.getElementById("card2").style.backgroundColor = "grey";
+        });
+        document.getElementById("card3").addEventListener("mouseover", function() {
+        document.getElementById("card3").style.backgroundColor = "grey";
+        });
+        document.getElementById("card4").addEventListener("mouseover", function() {
+        document.getElementById("card4").style.backgroundColor = "grey";
+        });
+        document.getElementById("card5").addEventListener("mouseover", function() {
+        document.getElementById("card5").style.backgroundColor = "grey";
+        });
+        document.getElementById("card6").addEventListener("mouseover", function() {
+        document.getElementById("card6").style.backgroundColor = "grey";
+        });
+
+        //mouseout
+        document.getElementById("card1").addEventListener("mouseout", function() {
+        document.getElementById("card1").style.backgroundColor = "white";
+        });
+        document.getElementById("card2").addEventListener("mouseout", function() {
+        document.getElementById("card2").style.backgroundColor = "white";
+        });
+        document.getElementById("card3").addEventListener("mouseout", function() {
+        document.getElementById("card3").style.backgroundColor = "white";
+        });
+        document.getElementById("card4").addEventListener("mouseout", function() {
+        document.getElementById("card4").style.backgroundColor = "white";
+        });
+        document.getElementById("card5").addEventListener("mouseout", function() {
+        document.getElementById("card5").style.backgroundColor = "white";
+        });
+        document.getElementById("card6").addEventListener("mouseout", function() {
+        document.getElementById("card6").style.backgroundColor = "white";
+        });
+
+    </script>
     <script src="scripts/triangle-calculate.js"></script>
     <script src="scripts/rectangle-calculate.js"></script>
     <script src="scripts/parallelogram-calculate.js"></script>
