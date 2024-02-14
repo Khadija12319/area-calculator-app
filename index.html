@@ -64,10 +64,17 @@
                         </figure>
                         <div class="card-body items-center text-center">
                           <h2 class="card-title">Parallelogram</h2>
-                          <p>Area (A) = b X h</p>
-                          <div class="w-full card-actions">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                          <p class="text-2xl">Area (A) = b X h</p>
+                          <div>
+                            <input type="text" name="" id="p-base" placeholder="b" class="w-24 text-2xl p-2 rounded-sm">
+                            <span class="mr-5 ml-2 text-2xl">cm</span>
+                            <input type="text" name="" id="p-height" placeholder="h" class="w-24 text-2xl p-2 rounded-sm">
+                            <span class="ml-2 text-2xl">cm</span>
                           </div>
+                          <div class="w-full card-actions">
+                            <button onclick="parallelogram_calculate()" class="btn btn-primary w-full text-2xl text-white">Calculate</button>
+                          </div>
+                          <p class="text-2xl">Area of Parallelogram : <span id="pa-area">0</span> <span>cm<sup>2</sup></span></p>
                         </div>
                       </div>
     
@@ -80,7 +87,7 @@
                           <h2 class="card-title">Rhombus</h2>
                           <p>Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
                           <div class="w-full card-actions">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button class="btn btn-primary w-full text-2xl text-white">Calculate</button>
                           </div>
                         </div>
                       </div>
@@ -94,7 +101,7 @@
                           <h2 class="card-title">Pentagon</h2>
                           <p>Area (A) = 0.5 X p X b</p>
                           <div class="w-full card-actions">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button class="btn btn-primary w-full text-2xl text-white">Calculate</button>
                           </div>
                         </div>
                       </div>
@@ -108,7 +115,7 @@
                           <h2 class="card-title">Ellipse</h2>
                           <p>Area (A) =Πab</p>
                           <div class="w-full card-actions">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button class="btn btn-primary w-full text-2xl text-white">Calculate</button>
                           </div>
                         </div>
                       </div>
@@ -122,6 +129,10 @@
     </main>
     <script src="scripts/triangle-calculate.js"></script>
     <script src="scripts/rectangle-calculate.js"></script>
+    <script src="scripts/parallelogram-calculate.js"></script>
+    <script src="scripts/rhombus-calculate.js"></script>
+    <script src="scripts/pentagon-calculate.js"></script>
+    <script src="scripts/ellipse-calculate.js"></script>
     
 </body>
 </html>
